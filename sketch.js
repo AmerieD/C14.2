@@ -69,10 +69,6 @@ function draw() {
   if (arrowGroup.isTouching(redB)) {
     
     redB.destroyEach();
-    redB.destroy();
-    redB.Each();
-    balloon.destroyEach();
-    
     arrowGroup.destroyEach();
     score=score+1;
   }
@@ -87,9 +83,9 @@ function draw() {
     blueB.destroyEach();
     arrowGroup.destroyEach();
     score=score+2;
+  if (arrowGroup.isTouching(pinkB)) {
   }
 
-  if (arrowGroup.isTouching(pinkB)) {
     pinkB.destroyEach();
     arrowGroup.destroyEach();
     score=score+1;
